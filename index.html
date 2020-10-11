@@ -220,5 +220,16 @@
       </div>
     </main>
     <script src="index.js"></script>
+    <script>
+        document.getElementById("getm").value = localStorage.getItem("getm")
+        function function1()    {
+            var getm = document.getElementById("getm")
+            localStorage.setItem("getm", getm.value)
+            
+            
+
+        }
+        setInterval(function1, 1000);
+    </script>
   </body>
 </html>
